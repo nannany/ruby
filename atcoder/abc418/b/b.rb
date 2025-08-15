@@ -12,9 +12,7 @@ max = 0
         t = j - i + 1
 
         candidate = (x - 2).fdiv(t - 2)
-        if candidate > max
-          max = candidate
-        end
+        max = [max, candidate].max
       else
         next
       end
